@@ -1,0 +1,150 @@
+/** Prepare our Custom Font **/
+@font-face{
+    /*name of font*/
+    font-family: bubbleFont;
+    /*link our font file*/
+    src:url("../fonts/sound-bubble-font/SoundBubbleDemoRegular-K71Ke.otf")
+}   
+body{
+    margin: 0;
+}
+/*Header styling*/
+header{
+    height: auto;
+    display: flex;
+    background: linear-gradient(to top, #0b2cd1, #31b2e6);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header img{
+    max-width: 70%;
+    height: auto;
+    margin-left: 2%;
+}
+header menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+header li {
+    margin-right: 3em;
+    padding: 1em;
+}
+header li a{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 2.5em;
+    white-space: nowrap;
+    font-family: bubbleFont;
+}
+/*Styling for row-1 div / main image*/
+.row-1{
+    background-image: url("../img/islandBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+}
+.row-1 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-1 img{
+    max-width: 60%;
+    max-height: 60%;
+}
+.row-1 img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out; 
+    filter: drop-shadow(0 0 10px gold);
+  }
+/*Styling for row-2 */
+.row-2 div{
+    width: auto;
+    height: 50vh;
+    background-color: #f2c57c;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.row-2 p{
+    font-family: bubbleFont;
+    font-size: 3em;
+    margin:0;
+    padding: 1.5em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
+/*Styling for row-3 and nutrition img*/
+.row-3 div{
+    width: auto;
+    height: 100vh;
+    background-color: #f2c57c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.row-3 img{
+    width: 25%;
+    height: auto;
+    margin: 0;
+}
+.row-3 img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out; 
+    filter: drop-shadow(0 0 10px gold); 
+  }
+.row-3 h3{
+    font-family: bubbleFont;
+    font-size: 4em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
+/*Footer styling with contact form*/
+footer {
+    height: auto; 
+    background: linear-gradient(to bottom, #f2c57c, #2e2e32);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    flex-wrap: wrap;    
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px; 
+}
+footer img{
+    max-width: 80%;
+    height: auto;
+}
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+footer button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 10vw;
+    border-radius: 1em;
+    margin-left: 17%;
+    font-family: "Comfortaa", sans-serif;
+}
+footer button:hover {
+    background-color: #0056b3;
+}
+footer input,
+footer textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 20vw;
+    font-family: "Comfortaa", sans-serif;
+}
+footer p,footer h3{
+    color: antiquewhite;
+    font-family: "Comfortaa", sans-serif;
+}
